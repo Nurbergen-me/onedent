@@ -32,6 +32,7 @@ a {
   font-family: "Manrope", sans-serif;
   font-size: 22px;
   padding: 12px 32px;
+  white-space: nowrap;
   cursor: pointer;
 }
 
@@ -100,8 +101,13 @@ button {
     object-fit: contain;
     object-position: center;
     width: 54px;
+    min-width: 54px;
     overflow: hidden;
     max-width: 100%;
+
+    img {
+      width: 100%;
+    }
   }
 
   &_menu {
@@ -138,15 +144,16 @@ button {
     gap: 10px;
   }
 
+  &_social {
+    img { 
+      height: 100%;
+    }
+  }
+
   &_button {
-    color: #fff;
-    white-space: nowrap;
-    justify-content: center;
-    border-radius: 20px;
     background-color: #5aaad9;
-    flex-grow: 1;
     padding: 12px 32px;
-    font-size: 22px;
+    color: #fff;
   }
 }
 
@@ -222,8 +229,11 @@ button {
   &_wave, &_person {
     position: absolute;
     height: 100%;
-    top: 0;
+    max-width: 100%;
+    bottom: 0;
     right: 0;
+    object-fit: contain;
+    object-position: bottom;
   }
 }
 
@@ -465,7 +475,7 @@ button {
       display: flex;
       flex-wrap: wrap;
       gap: 15px;
-      margin-right: 80px;
+      margin-right: 100px;
 
       span {
         border-radius: 10px;
@@ -527,6 +537,7 @@ button {
       position: absolute;
       right: 0;
       bottom: 0;
+      z-index: -1;
     }
   }
 }
@@ -600,6 +611,7 @@ button {
     background: #FFF;
     padding: 40px 40px 60px;
     position: relative;
+    z-index: 1;
   }
 
   &_title {
@@ -626,6 +638,7 @@ button {
 
   &_list {
     margin-bottom: 50px;
+    max-width: 70%;
 
     &_item {
       font-size: 22px;
@@ -643,7 +656,9 @@ button {
     position: absolute;
     right: 0;
     top: 0;
+    max-width: 60%;
     max-height: 100%;
+    z-index: -1;
   }
 }
 
@@ -720,6 +735,8 @@ button {
     position: absolute;
     max-height: 100%;
     height: calc(100% - 70px);
+    max-width: 40%;
+    object-fit: contain;
     right: 32px;
     top: 83px;
   }
@@ -869,4 +886,95 @@ button {
   right: 10px;
   font-size: 20px;
   cursor: pointer;
+}
+
+
+@media screen and (max-width: 1400px) {
+  .footer {
+    &_contacts {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .btn {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+  .header {
+    &_logo {
+      width: 40px;
+      min-width: 40px;
+    }
+    &_menu {
+      gap: 16px;
+
+      &_item {
+        font-size: 18px;
+      }
+    }
+  }
+  .services {
+    &_item {
+      &_text {
+        font-size: 18px;
+      }
+      &_img {
+        max-width: 30%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 28px;
+  }
+  .offer {
+    &_wrap {
+      height: 400px;
+    }
+    &_desc {
+      font-size: 18px;
+      margin-top: 18px;
+    }
+    &_btn {
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+  }
+  .services {
+    &_wrap {
+      grid-template-columns: 1fr;
+    }
+    &_item {
+      min-height: 360px;
+    }
+  }
+  .map {
+    &_side {
+      min-width: 50%;
+      width: 50%;
+    }
+  }
+  .message {
+    &_service {
+      padding: 10px 20px;
+      font-size: 18px;
+
+      img {
+        max-width: 20px;
+      }
+    }
+    &_img {
+      display: none;
+    }
+  }
+  .form {
+    &_img {
+      display: none;
+    }
+  }
 }

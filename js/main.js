@@ -41,6 +41,24 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper1-next',
     prevEl: '.swiper1-prev',
   },
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+  }
 });
 
 const swiper2 = new Swiper('.swiper2', {
@@ -54,6 +72,19 @@ const swiper2 = new Swiper('.swiper2', {
     nextEl: '.swiper2-next',
     prevEl: '.swiper2-prev',
   },
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    992: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+  }
 });
 
 
