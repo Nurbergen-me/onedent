@@ -8,10 +8,37 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/lightgallery-bundle.css" />
   <link href="css/main.css" rel="stylesheet">
 </head>
 
 <body>
+  <div class="mobile-header">
+    <div class="container">
+      <div class="mobile-header_wrap">
+        <div class="burger">
+          <div class="burger_item"></div>
+          <div class="burger_item"></div>
+          <div class="burger_item"></div>
+        </div>
+        <a href="#" class="header_logo">
+          <img src="img/logo.svg" alt="logo">
+        </a>
+        <a href="tel:+77029177100" class="header_phone">
+          <img loading="lazy" src="img/phone-icon.svg">
+          +7 (702) 917 71 00
+        </a>
+        <div class="header_btns">
+          <a href="#" class="header_social">
+            <img loading="lazy" src="img/insta-icon.svg">
+          </a>
+          <a href="#" class="header_social">
+            <img loading="lazy" src="img/whatsapp-icon.svg">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
   <header class="header" id="header">
     <div class="container">
       <div class="header_wrap">
@@ -88,9 +115,15 @@
         Следите за нами в  Stories 😉
       </h3>
       <div class="stories_wrap">
-        <img loading="lazy" src="img/stories/story-1.png" class="stories_item" />
-        <img loading="lazy" src="img/stories/story-2.png" class="stories_item" />
-        <img loading="lazy" src="img/stories/story-3.png" class="stories_item" />
+        <a 
+          data-video='{"source": [{"src":"/img/stories/reels-1.mp4", "type":"video/mp4"}],"attributes": {"preload": false, "playsinline": true, "controls": true}}'>
+          <img loading="lazy" src="img/stories/story-1.png" class="stories_item" />
+        </a>
+        <a 
+          data-video='{"source": [{"src":"/img/stories/reels-2.mp4", "type":"video/mp4"}], "attributes": {"preload": false, "playsinline": true, "controls": true}}'>
+          <img loading="lazy" src="img/stories/story-2.png" class="stories_item" />
+        </a>
+        <img loading="lazy" src="img/review-1.png" class="stories_item" />
         <img loading="lazy" src="img/stories/story-4.png" class="stories_item" />
         <img loading="lazy" src="img/stories/story-5.png" class="stories_item" />
         <img loading="lazy" src="img/stories/story-6.png" class="stories_item" />
@@ -114,6 +147,8 @@
         <div class="offer_right">
           <img src="img/banner-wave.png" class="offer_wave" alt=wave"">
           <img src="img/banner-smile.png" class="offer_person" alt=person"">
+          <img src="img/banner-wave-sm.png" class="offer_wave sm" alt=wave"">
+          <img src="img/banner-smile-sm.png" class="offer_person sm" alt=person"">
         </div>
       </div>
     </div>
@@ -309,19 +344,25 @@
     </div>
     <div class="reviews_container">
       <div class="container">
-        <div class="reviews_wrap">
-          <div class="reviews_item">
-            <img src="img/review-1.png" alt="review">
+        <div class="swiper3">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <div class="swiper-slide reviews_item">
+              <video id="video1" width="100%" height="100%">
+                <source src="img/stories/reels-1.mp4" type="video/mp4">
+              </video>
+              <button class="reviews_item_play" onclick="togglePlayPause('video1')"></button>
+            </div>
+            <div class="swiper-slide reviews_item">
+              <video id="video2" width="100%" height="100%">
+                <source src="img/stories/reels-2.mp4" type="video/mp4">
+              </video>
+              <button class="reviews_item_play" onclick="togglePlayPause('video2')"></button>
+            </div>
           </div>
-          <div class="reviews_item">
-            <img src="img/review-2.png" alt="review">
-          </div>
-          <div class="reviews_item">
-            <img src="img/review-3.png" alt="review">
-          </div>
-          <div class="reviews_item">
-            <img src="img/review-4.png" alt="review">
-          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev swiper3-prev"></div>
+          <div class="swiper-button-next swiper3-next"></div>
         </div>
       </div>
     </div>
@@ -764,6 +805,8 @@
   </div>
   <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/lightgallery.min.js"></script>
+  <script src="js/lg-video.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
