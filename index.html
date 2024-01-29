@@ -13,6 +13,76 @@
 </head>
 
 <body>
+  <div class="hidden">
+    <div class="mobile-header">
+      <div class="container">
+        <div class="mobile-header_wrap">
+          <span class="hidden_close">
+            &times;
+          </span>
+          <a href="#" class="header_logo">
+            <img src="img/logo.svg" alt="logo">
+          </a>
+          <a href="tel:+77029177100" class="header_phone">
+            <img loading="lazy" src="img/phone-icon.svg">
+            +7 (702) 917 71 00
+          </a>
+          <div class="header_btns">
+            <a href="#" class="header_social">
+              <img loading="lazy" src="img/insta-icon.svg">
+            </a>
+            <a href="#" class="header_social">
+              <img loading="lazy" src="img/whatsapp-icon.svg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <ul class="header_menu">
+        <li>
+          <a href="#header" class="header_menu_item hidden_item">
+            Главная
+          </a>
+        </li>
+        <li>
+          <a href="#promos" class="header_menu_item hidden_item">
+            Акции
+          </a>
+        </li>
+        <li>
+          <a href="#services" class="header_menu_item hidden_item">
+            Услуги
+          </a>
+        </li>
+        <li>
+          <a href="#reviews" class="header_menu_item hidden_item">
+            Отзывы
+          </a>
+        </li>
+        <li>
+          <a href="#team" class="header_menu_item hidden_item">
+            Врачи
+          </a>
+        </li>
+        <li>
+          <a href="#locations" class="header_menu_item hidden_item">
+            Филиалы
+          </a>
+        </li>
+        <li>
+          <a href="#awards" class="header_menu_item hidden_item">
+            Сертификаты
+          </a>
+        </li>
+        <li>
+          <a href="#footer" class="header_menu_item hidden_item">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
   <div class="mobile-header">
     <div class="container">
       <div class="mobile-header_wrap">
@@ -54,9 +124,9 @@
             <a href="#" class="header_social">
               <img loading="lazy" src="img/whatsapp-icon.svg">
             </a>
-            <button class="btn header_button">
+            <a class="btn header_button">
               Записаться на прием
-            </button>
+            </a>
           </div>
         </div>
         <div class="header_body">
@@ -116,11 +186,11 @@
       </h3>
       <div class="stories_wrap">
         <a 
-          data-video='{"source": [{"src":"/img/stories/reels-1.mp4", "type":"video/mp4"}],"attributes": {"preload": false, "playsinline": true, "controls": true}}'>
+          data-video='{"source": [{"src":"img/stories/reels-1.mp4", "type":"video/mp4"}],"attributes": {"preload": false, "playsinline": true, "controls": true}}'>
           <img loading="lazy" src="img/stories/story-1.png" class="stories_item" />
         </a>
         <a 
-          data-video='{"source": [{"src":"/img/stories/reels-2.mp4", "type":"video/mp4"}], "attributes": {"preload": false, "playsinline": true, "controls": true}}'>
+          data-video='{"source": [{"src":"img/stories/reels-2.mp4", "type":"video/mp4"}], "attributes": {"preload": false, "playsinline": true, "controls": true}}'>
           <img loading="lazy" src="img/stories/story-2.png" class="stories_item" />
         </a>
         <img loading="lazy" src="img/review-1.png" class="stories_item" />
@@ -142,7 +212,8 @@
         <div class="offer_left">
           <h1 class="offer_title">Сеть стоматологических клиник ONE DENT</h1>
           <p class="offer_desc">Забота о вашей улыбке – наше предназначение</p>
-          <button class="offer_btn" id="openModalBtn">Записаться на прием</button>
+          <!-- <button class="offer_btn openModalBtn">Записаться на прием</button> -->
+          <a href="https://wa.me/77029177071" target="_blank" class="offer_btn">Записаться на прием</a>
         </div>
         <div class="offer_right">
           <img src="img/banner-wave.png" class="offer_wave" alt=wave"">
@@ -230,9 +301,9 @@
           <p class="services_item_text">
             Когда необходимо вылечить много зубов, мы предлагаем провести санацию полости рта во сне. Лечение пройдет комфортно, без утомления и стресса
           </p>
-          <button class="btn services_item_btn">
+          <a href="https://wa.me/77029177071" target="_blank" class="btn services_item_btn">
             Записаться на прием
-          </button>
+          </a>
           <img src="img/service-1.png" alt="service" class="services_item_img">
         </div>
         <div class="services_item">
@@ -244,9 +315,9 @@
           <p class="services_item_text">
             Используем только качественные импланты -- Anyone, Anyridge (Южная Корея); Root, Shtrauman (Швейцария); Ankylos (Германия). Осуществляем: протезирование на имплантах, синус-лифтинг, наращивание костной ткани
           </p>
-          <button class="btn services_item_btn">
+          <a href="https://wa.me/77029177071" target="_blank" class="btn services_item_btn">
             Записаться на прием
-          </button>
+          </a>
           <img src="img/service-2.png" alt="service" class="services_item_img">
         </div>
         <div class="services_item">
@@ -258,9 +329,9 @@
           <p class="services_item_text">
             Мы предлагаем детскую стоматологию с индивидуальным подходом, уютной атмосферой и веселыми методами, чтобы сделать каждый визит в клинику приятным и комфортным для детей
           </p>
-          <button class="btn services_item_btn">
+          <a href="https://wa.me/77029177071" target="_blank" class="btn services_item_btn">
             Записаться на прием
-          </button>
+          </a>
           <img src="img/service-3.png" alt="service" class="services_item_img">
         </div>
         <div class="services_item">
@@ -272,9 +343,9 @@
           <p class="services_item_text">
             Лечение кариеса, пульпита, периодонтита c использованием пломб из США, Германии и Франции. Пломбы имеют цвет зуба и имеют свойство немедленного затвердевания
           </p>
-          <button class="btn services_item_btn">
+          <a href="https://wa.me/77029177071" target="_blank" class="btn services_item_btn">
             Записаться на прием
-          </button>
+          </a>
           <img src="img/service-4.png" alt="service" class="services_item_img">
         </div>
         <div class="services_item">
@@ -286,9 +357,9 @@
           <p class="services_item_text">
             Поможем обрести идеальную улыбку. С помощью: металлических, керамических, сапфировых, самолигирующихся брекетов. А также устанавливаем каппы, ретейнеры и пластинки
           </p>
-          <button class="btn services_item_btn">
+          <a href="https://wa.me/77029177071" target="_blank" class="btn services_item_btn">
             Записаться на прием
-          </button>
+          </a>
           <img src="img/service-5.png" alt="service" class="services_item_img">
         </div>
         <div class="services_item">
@@ -300,9 +371,9 @@
           <p class="services_item_text">
             От удаления до пластики уздечек губ и языка. Наши стоматологи-хирурги успешно проводят даже самые сложные удаления зубов
           </p>
-          <button class="btn services_item_btn">
+          <a href="https://wa.me/77029177071" target="_blank" class="btn services_item_btn">
             Записаться на прием
-          </button>
+          </a>
           <img src="img/service-6.png" alt="service" class="services_item_img">
         </div>
         <div class="services_item">
@@ -314,9 +385,9 @@
           <p class="services_item_text">
             Отбеливание Opalescent white. Эффект отбеливания до 5 лет
           </p>
-          <button class="btn services_item_btn">
+          <a href="https://wa.me/77029177071" target="_blank" class="btn services_item_btn">
             Записаться на прием
-          </button>
+          </a>
           <img src="img/service-7.png" alt="service" class="services_item_img">
         </div>
         <div class="services_item">
@@ -328,9 +399,9 @@
           <p class="services_item_text">
             У нас Вы можете поставить: коронки из металлокерамики, циркония, зубные вкладки, мостовые протезы, бюгельные протезы, мягкие силиконовые протезы, а также виниры
           </p>
-          <button class="btn services_item_btn">
+          <a href="https://wa.me/77029177071" target="_blank" class="btn services_item_btn">
             Записаться на прием
-          </button>
+          </a>
           <img src="img/service-8.png" alt="service" class="services_item_img">
         </div>
       </div>
@@ -576,9 +647,9 @@
               +7 (702) 917 70 71
             </div>
           </div>
-          <button class="btn map_btn">
+          <a href="https://wa.me/77029177071" target="_blank" class="btn map_btn">
             Записаться на прием
-          </button>
+          </a>
         </div>
         <div class="map_content">
           <div id="map" style="width:100%; height:100%"></div>
@@ -617,9 +688,9 @@
             Возможно лечение в рассрочку без переплат
           </li>
         </ul>
-        <button class="btn message_btn">
+        <a href="https://wa.me/77029177071" target="_blank" class="btn message_btn">
           Записаться на прием
-        </button>
+        </a>
         <div class="message_small-text">
           *Запишитесь прямо сейчас и мы подберем удобную клинику и подходящего врача
         </div>
@@ -699,42 +770,52 @@
   <footer class="footer" id="footer">
     <div class="container">
       <div class="footer_wrap">
-        <div class="footer_menu">
-          <li>
-            <a href="#header" class="footer_menu_item">
-              Главная
+        <div class="footer_left">
+          <div class="footer_menu">
+            <li>
+              <a href="#header" class="footer_menu_item">
+                Главная
+              </a>
+            </li>
+            <li>
+              <a href="#promos" class="footer_menu_item">
+                Акции
+              </a>
+            </li>
+            <li>
+              <a href="#services" class="footer_menu_item">
+                Наши услуги
+              </a>
+            </li>
+            <li>
+              <a href="#reviews" class="footer_menu_item">
+                Отзывы
+              </a>
+            </li>
+            <li>
+              <a href="#team" class="footer_menu_item">
+                Наши врачи
+              </a>
+            </li>
+            <li>
+              <a href="#locations" class="footer_menu_item">
+                Филиалы
+              </a>
+            </li>
+            <li>
+              <a href="#awards" class="footer_menu_item">
+                Сертификаты
+              </a>
+            </li>
+          </div>
+          <div class="footer_socials sm">
+            <a href="#" class="header_social">
+              <img loading="lazy" src="img/insta-icon.svg">
             </a>
-          </li>
-          <li>
-            <a href="#promos" class="footer_menu_item">
-              Акции
+            <a href="#" class="header_social">
+              <img loading="lazy" src="img/whatsapp-icon.svg">
             </a>
-          </li>
-          <li>
-            <a href="#services" class="footer_menu_item">
-              Наши услуги
-            </a>
-          </li>
-          <li>
-            <a href="#reviews" class="footer_menu_item">
-              Отзывы
-            </a>
-          </li>
-          <li>
-            <a href="#team" class="footer_menu_item">
-              Наши врачи
-            </a>
-          </li>
-          <li>
-            <a href="#locations" class="footer_menu_item">
-              Филиалы
-            </a>
-          </li>
-          <li>
-            <a href="#awards" class="footer_menu_item">
-              Сертификаты
-            </a>
-          </li>
+          </div>
         </div>
         <div class="footer_body">
           <div class="footer_contacts">
@@ -785,7 +866,7 @@
   </footer>
   <div id="modal" class="modal">
     <div class="modal-content">
-      <form id="contactForm" class="form_form modal-form">
+      <form class="form_form modal-form contact_form">
         <h3 class="form_name">
           Оставьте свои данные
         </h3>

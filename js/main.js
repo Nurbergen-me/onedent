@@ -207,13 +207,15 @@ document.addEventListener("DOMContentLoaded", function () {
 // Modal form
 
 document.addEventListener('DOMContentLoaded', function () {
-  const openModalBtn = document.getElementById('openModalBtn');
+  const openModalBtns = document.querySelectorAll('.openModalBtn');
   const closeModalBtn = document.getElementById('closeModalBtn');
   const modal = document.getElementById('modal');
 
-  openModalBtn.addEventListener('click', function () {
-    modal.style.display = 'block';
-  });
+  openModalBtns.forEach(item => {
+    item.addEventListener('click', function () {
+      modal.style.display = 'block';
+    });
+  })
 
   // closeModalBtn.addEventListener('click', function () {
   //   modal.style.display = 'none';
@@ -225,12 +227,34 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  const contactForm = document.getElementById('contactForm');
+  const contactForms = document.querySelectorAll('.contact_form');
 
-  contactForm.addEventListener('submit', function (event) {
-    event.preventDefault();
-    // You can handle form submission logic here
-    // For now, let's just close the modal
-    modal.style.display = 'none';
-  });
+  contactForms.forEach(item => {
+    item.addEventListener('submit', function (event) {
+      event.preventDefault();
+      // You can handle form submission logic here
+      // For now, let's just close the modal
+      modal.style.display = 'none';
+    });
+  })
 });
+
+
+
+const burger = document.querySelector('.burger');
+const hiddenClose = document.querySelector('.hidden_close');
+const hidden = document.querySelector('.hidden');
+const hiddenItems = document.querySelectorAll('.hidden_item');
+
+burger.addEventListener('click', function (event) {
+  hidden.classList.add('active')
+})
+
+hiddenClose.addEventListener('click', function (event) {
+  hidden.classList.remove('active')
+})
+hiddenItems.forEach(item => {
+  item.addEventListener('click', function (event) {
+    hidden.classList.remove('active')
+  })
+})
