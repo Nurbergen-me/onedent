@@ -93,6 +93,7 @@ const swiper2 = new Swiper('.swiper2', {
 
 
 // Reviews slider
+let $reviewSwiper = document.getElementById('reviewSwiper');
 const swiper3 = new Swiper('.swiper3', {
   // loop: true,
   slidesPerView: 2,
@@ -116,7 +117,16 @@ const swiper3 = new Swiper('.swiper3', {
       slidesPerView: 4,
       spaceBetween: 20
     },
-  }
+  },
+  on: {
+    init: function () {
+      const reviewsLg = lightGallery(reviewSwiper, {
+        speed: 300,
+        plugins: [lgVideo],
+        autoplayVideoOnSlide: true
+      });
+    },
+}
 });
 
 function togglePlayPause(videoId) {

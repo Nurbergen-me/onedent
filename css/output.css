@@ -2592,6 +2592,7 @@ button {
   height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   z-index: 1;
 }
 
@@ -2804,6 +2805,7 @@ button {
   border-radius: 20px;
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
 
 .reviews_item.hide .reviews_item_play {
