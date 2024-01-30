@@ -2389,6 +2389,8 @@ a {
   align-items: center;
   justify-content: center;
   white-space: nowrap;
+  width: -moz-fit-content;
+  width: fit-content;
   cursor: pointer;
 }
 
