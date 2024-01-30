@@ -241,7 +241,6 @@ button {
 
   &_left {
     margin-right: 300px;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1109,6 +1108,9 @@ button {
     }
   }
   .offer {
+    &_left {
+      height: 100%;
+    }
     &_desc {
       font-size: 18px;
       margin-top: 18px;

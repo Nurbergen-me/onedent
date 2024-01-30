@@ -2591,7 +2591,6 @@ button {
 
 .offer_left {
   margin-right: 300px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -3458,6 +3457,10 @@ button {
 
   .header_menu_item {
     font-size: 16px;
+  }
+
+  .offer_left {
+    height: 100%;
   }
 
   .offer_desc {
