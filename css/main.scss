@@ -449,6 +449,28 @@ button {
     gap: 20px;
   }
 
+  .swiper-slide {
+    
+    &_play {
+      background: transparent;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:after {
+        content: '';
+        background: url('../img/play-icon.svg') no-repeat center / contain;
+        width: 80px;
+        height: 75px;
+      }
+    }
+  }
+
   &_item {
     border-radius: 20px;
     overflow: hidden;
@@ -669,6 +691,14 @@ button {
     &:hover, &.active {
       border-color: #3EB94D;
     }
+
+    a {
+      color: #434343;
+
+      &:hover {
+        border-bottom: 1px solid;
+      }
+    }
   }
 
   &_content {
@@ -878,6 +908,15 @@ button {
 
       span {
         font-size: 20px;
+      }
+
+      a {
+        color: #434343;
+        font-size: 20px;
+
+        &:hover {
+          border-bottom: 1px solid;
+        }
       }
     }
 
@@ -1309,6 +1348,14 @@ button {
     &_container {
       padding: 20px 0;
     }
+    .swiper-slide {
+      &_play {
+        &:after {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
     &_item {
       border-radius: 10px;
       height: 270px;
@@ -1319,6 +1366,10 @@ button {
           height: 40px;
         }
       }
+    }
+
+    .swiper-slide {
+      width: auto;
     }
   }
   .team {
@@ -1472,8 +1523,9 @@ button {
     }
 
     &_text {
-      font-size: 13px;
+      font-size: 12px;
       margin-bottom: 20px;
+      text-align: center;
     }
 
     &_input {
@@ -1538,6 +1590,10 @@ button {
         span {
           font-size: 12px;
         }
+
+        a {
+          font-size: 14px;
+        }
       }
       &_form {
         .text {
@@ -1558,5 +1614,8 @@ button {
   .swiper-horizontal {
     overflow: visible;
     width: 90%;
+  }
+  .modal-content {
+    padding: 20px;
   }
 }
