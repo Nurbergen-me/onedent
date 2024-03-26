@@ -34,6 +34,10 @@ const swiper = new Swiper('.swiper', {
   // loop: true,
   slidesPerView: 3,
   spaceBetween: 20,
+  mobileSettings: {
+    controls: true, 
+    showCloseIcon: true 
+  },
 
   // Navigation arrows
   navigation: {
@@ -70,6 +74,10 @@ const swiper2 = new Swiper('.swiper2', {
   slidesPerView: 2,
   spaceBetween: 20,
   observer: true,
+  mobileSettings: {
+    controls: true, 
+    showCloseIcon: true 
+  },
 
   // Navigation arrows
   navigation: {
@@ -99,6 +107,10 @@ const swiper3 = new Swiper('.swiper3', {
   slidesPerView: 2,
   spaceBetween: 20,
   observer: true,
+  mobileSettings: {
+    controls: true, 
+    showCloseIcon: true 
+  },
 
   // Navigation arrows
   navigation: {
