@@ -107,9 +107,10 @@ const swiper3 = new Swiper('.swiper3', {
   slidesPerView: 2,
   spaceBetween: 20,
   observer: true,
-  mobileSettings: {
-    controls: true, 
-    showCloseIcon: true 
+  mobileSettings: { 
+      controls: true, 
+      showCloseIcon: true, 
+      download: true,
   },
 
   // Navigation arrows
